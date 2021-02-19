@@ -2,7 +2,15 @@
 """Guarde en lista `naturales` los primeros 100 números naturales (desde el 1) 
 usando el bucle while
 """
-
+con = 0
+naturales = []
+while con < 100:
+      #print(con)
+      con += 1
+      naturales.append(con)
+print(naturales)
+ 
+    
 
 
 
