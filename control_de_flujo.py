@@ -8,11 +8,7 @@ while con < 100:
       #print(con)
       con += 1
       naturales.append(con)
-print(naturales)
- 
-    
-
-
+#print(naturales)
 
 """Guarde en `acumulado` una lista con el siguiente patrón:
 
@@ -20,6 +16,15 @@ print(naturales)
 
 Hasta el número 50.
 """
+
+con = 0
+con1 = ''
+acumulado = []
+while con < 50:
+      con += 1      
+      con1 =  con1 + ' ' + str(con)
+      acumulado.append(''.join(con1)) 
+print(acumulado)
 
 
 
