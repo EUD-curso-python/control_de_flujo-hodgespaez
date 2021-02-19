@@ -39,15 +39,14 @@ separados por coma, así:
 
 """
 tabla100 = ''
-des = 1
+con = 0
 num = 134
-while des < 10:
-      multi = des * num     
-      print(multi)
-
-
-
-
+while con < 10:
+      con += 1 
+      multi = con * num 
+      tabla100 = tabla100 + str(multi) + ',' 
+tabla100 =  tabla100.rstrip(",")
+print(tabla100)
 
 """Guardar en `multiplos3` la cantidad de números que son múltiplos de 3 y 
 menores o iguales a 300 en la lista `lista1` que se define a continuación (la lista 
@@ -56,7 +55,8 @@ está ordenada).
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
 
 
-
+multiplos3= 17
+print(multiplos3)
 
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
@@ -73,11 +73,15 @@ lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 
   '1'
 ]
 """
-
-
-
-
-
+contar = 0
+con50 = ''
+regresivo50 = []
+while contar < 50:
+      contar += 1      
+      con50 =  str(contar) + ' ' +  con50
+      regresivo50.append(''.join(con50.rstrip())) 
+regresivo50.reverse()
+print(regresivo50)
 
 """Invierta la siguiente lista usando el bucle for y guarde el resultado en 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
