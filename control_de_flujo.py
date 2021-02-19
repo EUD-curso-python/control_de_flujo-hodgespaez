@@ -87,19 +87,30 @@ print(regresivo50)
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
 """
 lista2 = list(range(1, 70, 5))
+invertido = []
+for i in range(66,-1,-5):
+       invertido.append(i)
 
-
-
-
+print(invertido)
 
 """Guardar en `primos` una lista con todos los números primos desde el 37 al 300
 Nota: Un número primo es un número entero que no se puede calcular multiplicando 
 otros números enteros.
 """
-
-
-
-
+numero= int(input("¿Qué número quieres saber si es primo? "))
+valor= range(2,numero)
+contador = 0
+for n in valor:
+  if numero % n == 0:
+    contador +=1
+    print("divisor:", n)
+ 
+if contador > 0 :
+  print("El número no es primo" )
+else:
+  print(numero)    
+        
+ 
 
 """Guardar en `fibonacci` una lista con los primeros 60 términos de la serie de 
 Fibonacci.
