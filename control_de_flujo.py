@@ -27,16 +27,10 @@ print(acumulado)
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
-
-suma = 0
-for elemento in naturales:
-    #print(elemento)
-    suma += elemento
-print(suma)
-
-
-
-
+suma100 = 0
+for elemento in naturales: 
+    suma100 += elemento
+print(suma100)
 
 """Guarde en `tabla100` un string con los primeros 10 múltiplos del número 134, 
 separados por coma, así:
@@ -44,6 +38,12 @@ separados por coma, así:
 '134,268,...'
 
 """
+tabla100 = ''
+des = 1
+num = 134
+while des < 10:
+      multi = des * num     
+      print(multi)
 
 
 
