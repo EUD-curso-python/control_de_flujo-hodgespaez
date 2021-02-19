@@ -16,22 +16,23 @@ while con < 100:
 
 Hasta el número 50.
 """
-
 con = 0
 con1 = ''
 acumulado = []
 while con < 50:
       con += 1      
       con1 =  con1 + ' ' + str(con)
-      acumulado.append(''.join(con1)) 
+      acumulado.append(''.join(con1.lstrip())) 
 print(acumulado)
-
-
-
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
 
+suma = 0
+for elemento in naturales:
+    #print(elemento)
+    suma += elemento
+print(suma)
 
 
 
