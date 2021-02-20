@@ -5,7 +5,6 @@ usando el bucle while
 con = 0
 naturales = []
 while con < 100:
-      #print(con)
       con += 1
       naturales.append(con)
 #print(naturales)
@@ -23,14 +22,14 @@ while con < 50:
       con += 1      
       con1 =  con1 + ' ' + str(con)
       acumulado.append(''.join(con1.lstrip())) 
-print(acumulado)
+#print(acumulado)
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
 suma100 = 0
 for elemento in naturales: 
     suma100 += elemento
-print(suma100)
+#print(suma100)
 
 """Guarde en `tabla100` un string con los primeros 10 múltiplos del número 134, 
 separados por coma, así:
@@ -46,26 +45,22 @@ while con < 10:
       multi = con * num 
       tabla100 = tabla100 + str(multi) + ',' 
 tabla100 =  tabla100.rstrip(",")
-print(tabla100)
+#print(tabla100)
 
 """Guardar en `multiplos3` la cantidad de números que son múltiplos de 3 y 
-menores o iguales a 300 en la lista `lista1` que se define a continuación (la lista 
+menores a 300 en la lista `lista1` que se define a continuación (la lista 
 está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
 
-
-multiplos3= 17777
-print(multiplos3)
-
 multiplos3=[]
-
-for i  in lista1:
-  if i%3 == 0 and i<=300:
+for i in lista1:
+  if i%3 == 0 and i < 300:
     multiplos3.append(i)
   i +=1
-print(len(multiplos3))
-
+cuantos = len(multiplos3)
+multiplos3 = int(cuantos)
+#print(multiplos3)
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
 50 hasta el 1, así:
@@ -89,7 +84,7 @@ while contar < 50:
       con50 =  str(contar) + ' ' +  con50
       regresivo50.append(''.join(con50.rstrip())) 
 regresivo50.reverse()
-print(regresivo50)
+#print(regresivo50)
 
 """Invierta la siguiente lista usando el bucle for y guarde el resultado en 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
@@ -99,7 +94,7 @@ invertido = []
 for i in range(66,-1,-5):
        invertido.append(i)
 
-print(invertido)
+#print(invertido)
 
 """Guardar en `primos` una lista con todos los números primos desde el 37 al 300
 Nota: Un número primo es un número entero que no se puede calcular multiplicando 
@@ -136,9 +131,8 @@ contando = 0
 while contando < 60:
     fibonacci.append(a)
     a, b = b, a+b
-    contando += 1
-    
-print(fibonacci)
+    contando += 1    
+#print(fibonacci)
 
 """Guardar en `factorial` el factorial de 30
 El factorial (símbolo:!) Significa multiplicar todos los números enteros desde
@@ -150,16 +144,14 @@ Por ejemplo, el factorial de 5 se calcula así:
 """
 
 a = 30
-
 def calculaFactorial(n):
   if n>0:
     n = n * calculaFactorial(n - 1)
   else:
     n = 1
   return n
-
 factorial = calculaFactorial(a)
-print (factorial)
+#print (factorial)
 
 
 """Guarde en lista `pares` los elementos de la siguiente lista que esten 
@@ -173,15 +165,19 @@ for i, elemento in enumerate(lista3):
   if i%2 ==0 and i<=80:
     pares.append(elemento)
   i +=1
-print(pares)
+#print(pares)
 
 """Guarde en lista `cubos` el cubo (potencia elevada a la 3) de los números del 
 1 al 100. 
 """
+cubos = []
+val = 1
 
-
-
-
+while val <= 100:
+ cal = val**3
+ cubos.append(cal)
+ val +=1
+#print(cubos)
 
 """Encuentre la suma de la serie 2 +22 + 222 + 2222 + .. hasta sumar 10 términos 
 y guardar resultado en variable `suma_2s` 
@@ -197,9 +193,7 @@ while n <= 10:
     i+=1
   suma_2s += int(serie)
   n +=1
-print(suma_2s)
-
-
+#print(suma_2s)
 
 """Guardar en un string llamado `patron` el siguiente patrón llegando a una 
 cantidad máxima de asteriscos de 30. 
@@ -221,6 +215,15 @@ cantidad máxima de asteriscos de 30.
 **
 *
 """
+ 
+v11 = '*'
+contar = 1
+while contar < 10:
+  v12 =v11.ljust(contar,'*')
+  contar +=1
+  print(v12)
+
+
 
 
 
