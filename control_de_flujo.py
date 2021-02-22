@@ -216,22 +216,13 @@ cantidad máxima de asteriscos de 30.
 *
 """
  
-v11 = '*'
-contar = 1
-contar1 = 30
-while contar < 30:
-  patron =v11.ljust(contar,'*')
-  contar +=1
-  print(patron)
-while contar1 > 0:
-  patron =v11.ljust(contar1,'*')
-  contar1 -=1
-  print(patron)
-
-
-
-
-
-
-
-
+patron = ''
+for i in range(1,30,1):
+    for j in range(i):
+        patron+='*'
+    patron+='\n'
+for i in range(30,0,-1):
+    for j in range(i):
+        patron+='*'
+    patron+='\n'
+print(patron.rstrip('\n'))
