@@ -102,9 +102,9 @@ otros números enteros.
 """
 cont = 0
 primos = []
-for i in range(37, 300 + 1):
+for i in range(37, 300, 1):
     primos1 = True
-    for j in range(2,11):
+    for j in range(2,37):
         if i == j:
            break
         elif i%j == 0:
@@ -115,7 +115,8 @@ for i in range(37, 300 + 1):
         primos.append(i)
         cont += 1
 print(primos)
-        
+
+     
 """Guardar en `fibonacci` una lista con los primeros 60 términos de la serie de 
 Fibonacci.
 Nota: En la serie de Fibonacci, los 2 primeros términos son 0 y 1, y a partir 
@@ -145,7 +146,7 @@ Por ejemplo, el factorial de 5 se calcula así:
 
 a = 30
 def calculaFactorial(n):
-  if n>0:
+  if n > 0:
     n = n * calculaFactorial(n - 1)
   else:
     n = 1
