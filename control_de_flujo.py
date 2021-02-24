@@ -212,12 +212,9 @@ cantidad máxima de asteriscos de 30.
 *
 """
 patron = ''
-for i in range(1,30,1):
-    for j in range(i):
-        patron+='*'
-    patron+='\n'
-for i in range(30,0,-1):
-    for j in range(i):
-        patron+='*'
-    patron+='\n'
-print(patron.rstrip('\n'))
+for i in range(1,31):
+        patron+='*'*(i)+'\n'
+for i in range(29,0,-1):
+        patron+='*'*(i)+'\n'
+patron=patron.strip()
+print(patron)
