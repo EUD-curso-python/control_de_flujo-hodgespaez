@@ -114,7 +114,7 @@ for i in range(37, 300, 1):
     if primos1 == True:
         primos.append(i)
         cont += 1
-print(primos)
+#print(primos)
 
      
 """Guardar en `fibonacci` una lista con los primeros 60 términos de la serie de 
@@ -143,17 +143,12 @@ Por ejemplo, el factorial de 5 se calcula así:
 
 5! = 5 × 4 × 3 × 2 × 1 = 120
 """
-
-a = 30
-def calculaFactorial(n):
-  if n > 0:
-    n = n * calculaFactorial(n - 1)
-  else:
-    n = 1
-  return n
-factorial = calculaFactorial(a)
+factorial = 1
+i = 30
+while i >= 1:
+    factorial  *= i
+    i-=1
 #print (factorial)
-
 
 """Guarde en lista `pares` los elementos de la siguiente lista que esten 
 presentes en posiciones pares, pero solo hasta la posición 80.
@@ -216,7 +211,6 @@ cantidad máxima de asteriscos de 30.
 **
 *
 """
- 
 patron = ''
 for i in range(1,30,1):
     for j in range(i):
